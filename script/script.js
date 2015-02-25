@@ -5,7 +5,7 @@ var app = {};
 app.dup = function(){
 // alert('this is being called');
 
-	$('.box').on('click', function(){
+	$('img').on('click', function(){
 		//THIS GETS THE POSITION OF THE BOX BEING CLICKED
 		app.pos = $(this).position();
 		app.wid = $(this).width();
@@ -26,7 +26,7 @@ app.dup = function(){
 			bottomRight = {put1 : app.yoff, put2 : app.xoff},
 		]
 		$(this).remove();//THIS HIDES WHAT'S CLICKED
-
+		console.log('Half the width is: ' + app.xoff + '   Half the length is: ' + app.yoff);
 		// app.classHolder = app.classHolder + app.classCounter;
 			//THS WILL CREATE THE NEW QUADRANTS
 			app.colorSelect = [
@@ -34,8 +34,9 @@ app.dup = function(){
 			]
 			for (var i = 0; i < 4; i++) {
 				app.bp = app.boxPlace[i];
-				var div = $('<div>').addClass('box').css('top', app.bp.put1).css('left', app.bp.put2).css('width', '50%').css('height', '50%').css('background', app.colorSelect[i]);
-				div.appendTo('.wrapper');
+				var img = $('<img>').addClass('box-inner').attr('src', 'images/1483011695.jpg');
+				// var img = $('<img>').addClass('box-inner').attr('src', 'images/1483011695.jpg').css('top', app.bp.put1).css('left', app.bp.put2).css('width', app.xoff).css('height', app.	yoff).css('background', app.colorSelect[i]);
+				img.appendTo('.wrapper');
 			};
 	});
 }
