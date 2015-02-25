@@ -27,12 +27,15 @@ html,body, img{
 	border: 1px solid rgba(0,0,0,0.2);
 }*/
 .box{
-	position: absolute;
+	position: realtive;
 	/*width: 50%;
 	height: 50%;*/
 	/*margin-right: 2%;*/
 	border: 1px solid rgba(0,0,0,0.2);
 	/*background: green;*/
+}
+.hider{
+	opacity: 0;
 }
 ///////////////////////////////////////////
 /*/THE CRACKS!!!!!/*/
