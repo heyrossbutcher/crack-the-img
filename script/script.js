@@ -30,7 +30,7 @@ app.dup = function(){
 		// app.classHolder = app.classHolder + app.classCounter;
 			//THS WILL CREATE THE NEW QUADRANTS
 			app.colorSelect = [
-				'green','mistyrose','purple','yellow','black'
+				'green','mistyrose','purple','yellow','green'
 			]
 			for (var i = 0; i < 4; i++) {
 				app.bp = app.boxPlace[i];
