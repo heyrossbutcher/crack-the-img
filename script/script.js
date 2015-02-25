@@ -30,13 +30,16 @@ app.dup = function(){
 		// app.classHolder = app.classHolder + app.classCounter;
 			//THS WILL CREATE THE NEW QUADRANTS
 			app.colorSelect = [
-				'green','mistyrose','purple','yellow','green'
+				'green','mistyrose','purple','yellow'
 			]
-			for (var i = 0; i < 4; i++) {
-				app.bp = app.boxPlace[i];
-				var img = $('<img>').addClass('box-inner').attr('src', 'images/1483011695.jpg');
-				// var img = $('<img>').addClass('box-inner').attr('src', 'images/1483011695.jpg').css('top', app.bp.put1).css('left', app.bp.put2).css('width', app.xoff).css('height', app.	yoff).css('background', app.colorSelect[i]);
-				img.appendTo('.wrapper');
+			for (var i = 0; i < 6; i++) {
+				// app.bp = app.boxPlace[1];
+				app.counter = i + 1;
+				var div = $('<div>').addClass('crack' + app.counter).css('top', app.xpos).css('left', app.ypos).css('width', app.wid).css('height', app.hgt);	
+				var img = $('<img>').attr('src', 'images/1483011695.jpg');
+				// var img = $('<img>').addClass('box-inner').attr('src', 'images/1483011695.jpg').css('top', app.bp.put1).css('left', app.bp.put2).css('width', app.xoff).css('height', app.yoff).css('background', app.colorSelect[i]);
+				div.appendTo('.wrapper');
+				img.appendTo('.crack' + app.counter);
 			};
 	});
 }
