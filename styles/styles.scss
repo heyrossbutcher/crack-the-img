@@ -17,7 +17,8 @@ html,body, img{
 	margin: 0 auto;
 	position: relative;
 }
-.boxAB{
+.img_holder{
+	position: relative;
 }
 /*.box{
 	position: absolute;
@@ -26,17 +27,14 @@ html,body, img{
 	background: #f00;
 	border: 1px solid rgba(0,0,0,0.2);
 }*/
-.box{
-	position: realtive;
-	/*width: 50%;
-	height: 50%;*/
-	/*margin-right: 2%;*/
-	border: 1px solid rgba(0,0,0,0.2);
-	/*background: green;*/
-}
 .hider{
-	opacity: 0;
+	display: none;
 }
+/////////////////////
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17, .box18, .box19, .box20, .box21, .box22, {
+	position: relative;
+}
+
 ///////////////////////////////////////////
 /*/THE CRACKS!!!!!/*/
 ///////////////////////////////////////////
