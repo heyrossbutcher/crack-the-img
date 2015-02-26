@@ -33,13 +33,13 @@ app.dup = function(){
 		//
 		//ADD TO THE DOM
 		//CREATE THE QUADRANTS AND LOAD IN IMG
-		for (var i = 0; i < 6; i++) {
+		for (var i = 0; i < 20; i++) {
 			app.counter = i+1;
 			console.log(app.counter);
 
 			app.crack_holder = 'crack' + app.counter;
 			app.img_crack_holder = '.' + app.box_holder + ' ' + '.' +  app.crack_holder;
-			console.log(app.img_crack_holder + '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
+			// console.log(app.img_crack_holder + '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
 
 			var div_img = $('<div>').addClass(app.crack_holder).css('top', app.xpos).css('left', app.ypos).css('width', app.wid).css('height', app.hgt);	
 			div_img.appendTo(div);
