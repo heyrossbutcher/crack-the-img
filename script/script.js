@@ -36,11 +36,12 @@ app.dup = function(){
 		for (var i = 0; i < 20; i++) {
 			app.counter = i+1;
 			console.log(app.counter);
+			// app.opac = 1;
 			//
 			app.crack_holder = 'crack' + app.counter;
 			app.img_crack_holder = '.' + app.box_holder + ' ' + '.' +  app.crack_holder;
 			//
-			var div_img = $('<div>').addClass(app.crack_holder).css('top', app.xpos).css('left', app.ypos).css('width', app.wid).css('height', app.hgt);	
+			var div_img = $('<div>').addClass(app.crack_holder).css('top', app.xpos).css('left', app.ypos).css('width', app.wid).css('height', app.hgt).css('opacity', app.opac);	
 			div_img.appendTo(div);
 			//
 			var img = $('<img>').attr('src', app.grabImg);
