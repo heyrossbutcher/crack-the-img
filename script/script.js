@@ -1,9 +1,8 @@
 var app = {};
-
-
+//
 app.click_counter = 0;
 //
-app.dup = function(){
+app.dup = function(opacBoo, snd){
 // alert('this is being called');
 
 	$('img').on('click', function(){
@@ -31,6 +30,16 @@ app.dup = function(){
 
 		//ADD TO THE DOM
 		//CREATE THE QUADRANTS AND LOAD IN IMG
+		app.opacSwitcher = opacBoo;
+		app.crackSnd	= snd;
+		//
+		if(app.crackSnd){
+			var audioElement = document.createElement('audio');
+	        audioElement.setAttribute('src', 'sdfx/crack.mp3');
+	        audioElement.setAttribute('autoplay', 'autoplay');
+	        audioElement.play();
+		}
+        //
 		for (var i = 0; i < 20; i++) {
 			app.counter = i+1;
 			//
@@ -49,12 +58,14 @@ app.dup = function(){
 			var img = $('<img>').attr('src', app.grabImg);
 			//
 			img.appendTo(app.img_crack_holder);
-			$(app.img_crack_holder).delay(2500).fadeTo(1, app.opac);
+			if (app.opacSwitcher){
+				$(app.img_crack_holder).delay(2500).fadeTo(1, app.opac);
+			}
 		};
 	});
 }
 
 $(function() {
-	app.dup();
+	app.dup(true, false);
 	
 });
