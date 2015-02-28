@@ -13,6 +13,7 @@ $.fn.crackerJack = function(opacBoo, snd){
 		ypos = pos.left;
 		//THIS REMOVES WHAT'S CLICKED
 		$(this).addClass('hider');
+		console.log('Add class of hider to ' + this + '!!!!!!!!!!!!!!!!!!!!!!!!');
 		//THIS STORES THE SRC OF THE IMG CLICKED
 		grabImg = $(this).attr('src');
 		//CREATES THE IMAGE REPLACEMNT DIV
