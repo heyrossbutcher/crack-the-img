@@ -20,6 +20,20 @@ html,body{
 	position: relative;
 	background-image: url('../images/tex_1.jpg');
 }
+h3{
+	padding: 0;
+	margin: 5px 0;
+	font-size: 2.2rem;
+	line-height: 3.5rem;
+	color: rgba(255,255,255,0.85);
+}
+.heading{
+	margin: 0 0 10px 0;
+	padding: 0;
+	font-size: 2.2rem;
+	line-height: 3.5rem;
+	color: rgba(255,255,255,0.85);
+}
 	header{
 		background: #000;
 		text-align: center;
@@ -30,9 +44,6 @@ html,body{
 		color: rgba(255,255,255,0.8);
 		max-width: 100%;
 		background-color: #000;
-		p{
-
-		}
 	}
 	.white{
 		background:#fff;
@@ -48,12 +59,11 @@ html,body{
 	}
 	.main{
 		font-size: 1.6rem;
-		font-style: italic;
 		line-height: 2.5rem;
 	}
 		.inner-wrapper{
 			max-width: 1000px;
-			padding: 20px 0 25px 0;
+			padding: 40px 0 45px 0;
 			margin: 0 auto;
 			position: relative;
 		}
@@ -61,27 +71,45 @@ html,body{
 				float: left;
 				padding-left: 25px;
 				margin: 0 10px;
-				padding: 25px;
+				padding: 20px;
 				display: inline-block;
 				max-width: 38%;
 				background: #000;
-				color: rgba(255,255,255,0.9);
-				p{
+				color: rgba(255,255,255,0.75);
+				border-radius: 3px;
+				font-size: 1.7rem;
+				line-height: 2.7rem;
+				ul{
 					margin: 0;
-					border-left: 1px solid rgba(0,0,0,0.25);
-					font-size: 1.5rem;
-					line-height: 2.25rem;
+					padding: 0 25px;
+				}
+				li{
+					margin-bottom: 15px;					
+					font-size: 1.7rem;
+					line-height: 2.4rem;
+				}
+				.code{
+					background: #fff;
+					color: #000;
+					font-size: 1.7rem;
+					line-height: 2.7rem;
+					padding: 5px 20px;
+					border-radius: 3px;
+					margin: 25px 0;
 				}
 			}
 	.bb{
 			border-bottom: 1px solid rgba(0,0,0,0.15);
 	}
 	footer{
-		font-size: 1.5rem;
+		font-size: 1.8rem;
 		background: #000;
 		color: rgba(255,255,255,0.8);
 		text-align: center;
 		padding: 40px 0;
+		.spacer{
+			padding-right: 20px;
+		}
 	}
 .cr_ex{
 	width: 100%;
@@ -117,4 +145,14 @@ html,body{
 	float: left;
 	max-width: 50%;
 	display: inline;
+}
+a:link{
+	text-decoration: underline;
+	color: white;
+}
+a:hover{
+	text-decoration: none;
+}
+a:visited{
+	color: white
 }

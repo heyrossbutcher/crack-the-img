@@ -11,11 +11,12 @@
 	<div class="wrapper clearfix">
 
 		<header class="clearfix">
-			<img src="images/crackerjack_logo-v2.png" height="54" width="500" alt="">
+			<img src="images/crackerjack_logo-v2.png">
 		</header>
 		<div class="black main">
 			<div class="inner-wrapper clearfix">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae distinctio deleniti molestias ab sunt aliquid nisi enim soluta vitae, magnam quam error ad obcaecati eligendi doloremque sint praesentium esse minima, ratione rem modi fuga iste. In velit porro quidem dolorem a debitis eos facere magni!</p> 
+				<h3>Crackerjack is a jquery plugin that allows you to create a sweet, sweet splintering glass effect on your img tags.</h3>
+<h3>Simply call the plugin on the class you want and it will affect any img tag within that class.</h3> 
 			</div>
 		</div>	
 			<div class="white clearfix">
@@ -24,13 +25,28 @@
 					<img src="images/img_0.jpg">
 				</div>
 				<div class="desc">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi earum, culpa ad, ipsa facere possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi earum, culpa ad, ipsa facere possimus.</p>
+				<p class='heading'>Instructions:</p>
+				<ul>
+					<li>Download the plugin here, open and place the contents in your root folder.</li>
+					<li>This plugin requires Jquery, so your HTML page should contain jquery, the crackerjack plugin and as well as the code that will be calling the plugin. All placed in that order.</li>
+					<li>Once the scripts are set up you can place the plugin code on your class:</li>
+				</ul>
+				<p class = 'code'>$('your-div-class').crackerJack(true, true);</p>
+				<ul>
+					<li>Then in your stylesheet set the class you assign the plugin to position:relative.</li>
+				</ul>
+				<p class = 'code'>.your-div-class{ position: relative }</p>
+				<p>Click the image to see the plugin in action.</p>
 				</div>
 			</div>
 		</div><!-- Image 02 ends -->
 		<div class="black main">
 			<div class="inner-wrapper clearfix">
-				<p>Sint neque, incidunt animi nihil fuga amet sapiente, omnis perspiciatis vitae sed in reiciendis. Id doloremque facere laborum sapiente molestiae numquam eum, consequuntur, nesciunt eligendi nostrum dolor iste nulla, neque tempora eveniet totam ducimus assumenda incidunt est sequi provident. Temporibus, alias, nisi ratione labore libero nulla est quae inventore quasi! Esse quia, omnis reprehenderit non.</p>
+				<p class='heading'>The Crackerjack plugin is based on percentages so it automatically works on any sized image.</p>
+				<p class='heading'>There are two parameters you can pass to modify the effect: the transparency and the sound arguments.</p>
+				<p class='heading'>The arguments are booleans that allow you to them on and off.</p> 
+				<p class='heading'>Below are description on how to operate the plugin.</p>
+
 			</div>
 		</div><!-- Intro ends  -->
 		<div class="white clearfix">
@@ -39,7 +55,9 @@
 					<img src="images/img_1.jpg">
 				</div>
 				<div class="desc">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi earum, culpa ad, ipsa facere possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi earum, culpa ad, ipsa facere possimus.</p>
+					<p>By setting both the first and second parameters to false, you are turning off the transparency and sound effect.</p>
+					<p class = 'code'>$('your-div-class').crackerJack(false, false);</p>
+					<p>Click the image to see the result.</p>
 				</div>
 			</div>
 		</div><!-- Image 01 ends -->
@@ -49,7 +67,9 @@
 					<img src="images/img_2.jpg">
 				</div>
 				<div class="desc">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi earum, culpa ad, ipsa facere possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi earum, culpa ad, ipsa facere possimus.</p>
+					<p>By setting the first parameters to true, you are turning on the transparency effect.</p>
+					<p class = 'code'>$('your-div-class').crackerJack(true, false);</p>
+					<p>Click the image to see the result.</p>
 				</div>
 			</div>
 		</div><!-- Image 02 ends -->
@@ -59,12 +79,18 @@
 					<img src="images/img_3.jpg">
 				</div>
 				<div class="desc">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi earum, culpa ad, ipsa facere possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi earum, culpa ad, ipsa facere possimus.</p>
+					<p>By setting the second parameters to true, you are turning on the sound effect.</p>
+					<p class = 'code'>$('your-div-class').crackerJack(true, true);</p>
+					<p>Click the image to see the effect.</p></p>
 				</div>
 			</div>
 		</div><!-- Image 03 ends -->
 
-		<footer>10101010101111000110101010</footer>
+		<footer>
+		<span class="spacer">This was made by <a href="http://www.rossbutcher.ca" target="blank">heyRoss</a>.</span>
+		<span class="spacer">You can fork it <a href="http://www.rossbutcher.ca" target="blank">here</a>. </span>
+		And contact him <a href="mailto:heyrossbutcher@gmail.com">here.
+		</footer>
 		
 	</div><!-- Wrapper ends -->
 
