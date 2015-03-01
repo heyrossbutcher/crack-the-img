@@ -29,6 +29,7 @@ html,body{
 		background: #000;
 		color: rgba(255,255,255,0.8);
 		max-width: 100%;
+		background-color: #000;
 		p{
 
 		}
@@ -37,12 +38,11 @@ html,body{
 		background:#fff;
 		color: rgba(0,0,0,0.8);
 		max-width: 100%;
-		border-bottom: 50px solid rgba(0,0,0,1);
 		position: relative;
 
 	}
 	.white img{
-		// width: 100%;
+		width: 100%;
 		padding: 0;
 		margin: 0;
 	}
@@ -60,15 +60,22 @@ html,body{
 			.desc{
 				float: left;
 				padding-left: 25px;
-				margin: 0;
+				margin: 0 10px;
+				padding: 25px;
 				display: inline-block;
-				width: 50%;
+				max-width: 38%;
+				background: #000;
+				color: rgba(255,255,255,0.9);
+				p{
+					margin: 0;
+					border-left: 1px solid rgba(0,0,0,0.25);
+					font-size: 1.5rem;
+					line-height: 2.25rem;
+				}
 			}
-			p{
-				margin: 0;
-				padding: 0 20px;
-				border-left: 1px solid rgba(0,0,0,0.25);
-			}
+	.bb{
+			border-bottom: 1px solid rgba(0,0,0,0.15);
+	}
 	footer{
 		font-size: 1.5rem;
 		background: #000;
@@ -84,10 +91,15 @@ html,body{
 	position: relative;
 	float: left;
 	// max-width: 50%;
-	display: inline;
-	margin: 5px;
-	// padding: 100px
+	// display: inline;
+	// margin: 0 auto;
+	// padding: 0 200px
+	// text-align: center;
+	img{
+		margin: 0 auto;
+	}
 }
+
 .img_holder2{
 	position: relative;
 	float: left;
