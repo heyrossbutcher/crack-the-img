@@ -26,7 +26,7 @@ $.fn.crackerJack = function(opacBoo, snd){
 		//THIS CHECKS TO SEE IF THE SOUND SHOULD PLAY OR NOT
 		if(crackSnd){
 			var audioElement = document.createElement('audio');
-	        audioElement.setAttribute('src', 'sdfx/crack.mp3');
+	        audioElement.setAttribute('src', 'sdfx/sdfx.mp3');
 	        audioElement.setAttribute('autoplay', 'autoplay');
 	        audioElement.play();
 		}
